@@ -1,0 +1,24 @@
+<% include partials/header %>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8" style="padding-left:30px;" >
+   <h4 class="movieTitle"><%= movie.Title %></h4>
+   <img class="poster" src="<%= movie.Poster%>">
+   <p class="mem"><b>Released:</b> <%= movie.Released %></p>
+   <p class="mem"><b>Genre: </b><%= movie.Genre %></p>
+   <p class="mem"><b>Director:</b> <%= movie.Director %></p>
+   <p class="mem"><b>Cast:</b> <%= movie.Actors %></p>
+   <div class="plot row"><div class="col-md-1 plotT"style="padding:0;margin:0;">Plot: </div><div style="margin:0;" class="col-md-11 plotC"><%= movie.Plot %></div></div>
+   <div class="row R"><div class="col-md-2 plotT ratings">Ratings:</div><div style="padding-top:14px;" class="col-md-10">
+  <% for(var i = 0; i < movie.Ratings.length;i++){ %>
+     <li><%=movie.Ratings[i].Source%>: <%= movie.Ratings[i].Value%></li>
+     <% } %>
+   </div>
+ </div>
+ <p class="mem"><b>Awards:</b> <%= movie.Awards %></p>
+ <p class="mem"><b>Box Office:</b> <%= movie.BoxOffice%></p>
+</div>
+   <div class="col-md-2"></div>
+</div>
+
+<% include partials/footer %>

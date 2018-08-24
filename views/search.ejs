@@ -1,0 +1,17 @@
+<% include partials/header %>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+     <h1 style="text-align:center;width:100%">Search for movies</h1>
+  <form action="/results" method="post">
+    <div class="form-group">
+   <input class="form-control" type="text" name="search" placeholder="Search for a movie" required>
+ </div>
+   <div class="form-group">
+   <input class="btn btn-primary" type="submit">
+ </div>
+  </form>
+</div>
+<div class="col-md-2"></div>
+</div>
+<% include partials/footer %>

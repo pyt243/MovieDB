@@ -1,0 +1,35 @@
+<% include partials/header %>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="container">
+      <h1>Write a review</h1>
+   <form action="/reviews" method="post">
+     <div class="form-group">
+       <input class="form-control" name="author" type="text" placeholder="Author">
+     </div>
+     <div class="form-group">
+      <input class="form-control" name="content" type="text" placeholder="Description">
+     </div>
+     <div class="form-group">
+      <input type="submit" class="btn btn-primary">
+     </div>
+   </form>
+ </div>
+ <hr class="main-hr">
+ <div class="container">
+   <div class="reviews">
+     <h1>Reviews</h1>
+     <% reviews.forEach(function(review){ %>
+       <div class="rev">
+          <h4 class="rev-author"><%= review.author %></h4>
+          <p class="rev-content"><%= review.content %></p>
+       </div>
+       <hr class="sub-hr">
+    <% }) %>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+<% include partials/footer %>

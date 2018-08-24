@@ -1,0 +1,31 @@
+<% include partials/header %>
+<div class="main">
+  <div class="video-main">
+    <h1 class="title-main">MovieDB</h1>
+
+    <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+    <video autoplay loop id="video-background" muted >
+      <source src="/stylesheets/images/background-video.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="credits">
+  <h3>Contact Us</h3>
+  <div class="row">
+   <div class="col-md-6">
+   <ul>
+     <li><span class="contact-title">Email: </span></li>
+     <li>yedhutilak@gmail.com</li>
+     <li>f20170021@hyderabad.bits-pilani.ac.in</li>
+   </ul>
+   </div>
+   <div class="col-md-6">
+     <ul>
+       <li><span class="contact-title">Phone: </span></li>
+       <li>7366482345</li>
+       <li>808-546783</li>
+     </ul>
+   </div>
+  </div>
+</div>
+</div>
+<% include partials/footer %>

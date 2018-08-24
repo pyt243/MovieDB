@@ -1,0 +1,109 @@
+h1{
+  padding:20px;
+  padding-bottom:35px;
+  text-align: center;
+}
+input.form-control{
+  width:50%;
+  margin: 10px auto;
+}
+input.btn{
+  text-align: center;
+  margin: 0px 45%;
+}
+.ind-movie{
+  margin:10px;
+  border: 2px solid #b2b5ba;
+  border-radius: 10%;
+  padding: 10px;
+}
+.title{
+  text-align: center;
+  padding-bottom:10px;
+  font-family:Montserrat;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.year{
+  text-align:center;
+  padding-left:10px;
+}
+.s-year{
+  font-weight: 500;
+}
+a.btn{
+  width:10%;
+  text-align: center;
+  margin-left:45%;
+  margin-bottom:15px;
+}
+.movieTitle{
+  text-align: center;
+  padding-bottom:10px;
+  margin-top: 15px;
+  font-family:Montserrat;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+.poster{
+  width:40%;
+  padding:5px;
+  background-color:#b2b5ba;
+  border : 2px solid #d2d7dd;
+  margin:10px 30%;
+}
+.mem{
+  font-size:1.4em;
+  text-align: center;
+  font-family: Montserrat;
+}
+.plot{
+  margin:0px;
+    font-family: Montserrat;
+}
+.plotT{
+  width:10%;
+  margin:0;
+  padding:0;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.plotC{
+  margin-right:0;
+  padding-left:0px;
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+.col-md-10 li{
+  margin-right:0;
+  padding-left:0px;
+  padding-top: 5px;
+  font-size: 1.3em;
+  list-style-type: none;
+  font-family:Montserrat;
+}
+.ratings{
+  padding-top: 15px;
+}
+.R{
+  width:50%;
+  margin:0 20% 10px 30%;
+}
+.info-c{
+  width:100%;
+  padding:5%;
+  border:4px solid #b2b5ba;
+  border-radius:8%;
+  font-family:Montserrat;
+}
+.main-hr{
+  border: 0;
+   height: 2px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin:30px 0;
+}
+@media screen and (max-width:500px){
+  a.btn{
+    margin-left:120px;
+  }
+}
