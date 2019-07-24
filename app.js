@@ -8,12 +8,14 @@ var localStrategy = require("passport-local");
 var Review = require("./models/review");
 var bodyParser = require("body-parser");
 var User = require("./models/user");
-mongoose.connect("mongodb://localhost/reviews");
+const port = process.env.PORT || 5500;
+process.env.MONGO_URL="mongodb+srv://campuseats:campuseats@cluster0-kkpdt.mongodb.net/MovieDB?retryWrites=true&w=majority";
+mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true });
 app.use(express.static("public"));
 var search,content;
 app.use(bodyParser.urlencoded({extended:true}));
-app.listen(5500,"127.0.0.1",function(){
-  console.log("server has started");
+app.listen(process.env.PORT||5500,function(){
+  console.log(`listeneing on port ${process.env.PORT||5500}`);
 });
 app.use(require("express-session")({
   secret:"secret",
@@ -32,6 +34,8 @@ app.use(function(req,res,next){
 //routes
 app.get("/",function(req,res){
   res.render("home.ejs");
+  console.log(req.user);
+  console.log("Home page");
 });
 app.get("/search",isLoggedIn,function(req,res){
   res.render("search.ejs");
